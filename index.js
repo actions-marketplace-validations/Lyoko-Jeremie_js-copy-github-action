@@ -13,9 +13,9 @@ try {
     const modeMulti = core.getInput('multi', {required: false}).length > 0;
     console.log(`Copying "${sourceFile}" to "${targetFile}"`);
     console.log(`modeOne:${modeOne} , modeMulti:${modeMulti}`);
-    console.log(`cwd:${cwd} , destBase:${destBase}`);
+    console.log(`cwd:${cwd} , srcBase:${srcBase} , destBase:${destBase}`);
 
-    const opt = {cwd: cwd, destBase: destBase, srcBase: srcBase};
+    const opt = {cwd: cwd || process.cwd(), destBase: destBase, srcBase: srcBase};
 
     if (modeOne) {
         console.log(`run in modeOne`);
