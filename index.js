@@ -9,8 +9,8 @@ try {
     const cwd = core.getInput('cwd', {required: false}) || undefined;
     const srcBase = core.getInput('srcBase', {required: false}) || undefined;
     const destBase = core.getInput('destBase', {required: false}) || undefined;
-    const modeOne = core.getBooleanInput('one', {required: false}) || false;
-    const modeMulti = core.getBooleanInput('multi', {required: false}) || false;
+    const modeOne = core.getInput('one', {required: false}).length > 0;
+    const modeMulti = core.getInput('multi', {required: false}).length > 0;
     console.log(`Copying "${sourceFile}" to "${targetFile}"`);
     console.log(`modeOne:${modeOne} , modeMulti:${modeMulti}`);
     console.log(`cwd:${cwd} , destBase:${destBase}`);
