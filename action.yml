@@ -13,6 +13,20 @@ inputs:
     description: "Target File"
     required: true
     default: ""
+  cwd: # id of input
+    description: "WorkDir"
+    required: false
+    default: ""
+  destBase: # id of input
+    description: "Target File Base dir"
+    required: false
+    default: ""
+  modeOne: # id of input
+    description: "one file copy mode"
+    required: false
+  modeMulti: # id of input
+    description: "multi line source mode"
+    required: false
 runs:
   using: "node16"
   main: "index.js"
