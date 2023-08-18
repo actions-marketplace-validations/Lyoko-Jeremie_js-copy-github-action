@@ -17,6 +17,10 @@ inputs:
     description: "WorkDir"
     required: false
     default: ""
+  srcBase: # id of input
+    description: "Source File Base dir"
+    required: false
+    default: ""
   destBase: # id of input
     description: "Target File Base dir"
     required: false
