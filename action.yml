@@ -28,9 +28,11 @@ inputs:
   modeOne: # id of input
     description: "one file copy mode"
     required: false
+    default: ""
   modeMulti: # id of input
     description: "multi line source mode"
     required: false
+    default: ""
 runs:
   using: "node16"
   main: "index.js"
