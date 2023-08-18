@@ -16,6 +16,7 @@ try {
     console.log(`cwd:${cwd} , srcBase:${srcBase} , destBase:${destBase}`);
 
     const opt = {cwd: cwd || process.cwd(), destBase: destBase, srcBase: srcBase};
+    console.log(`opt:${opt}`);
 
     if (modeOne) {
         console.log(`run in modeOne`);
