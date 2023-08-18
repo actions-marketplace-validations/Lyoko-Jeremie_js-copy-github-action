@@ -1,4 +1,4 @@
-name: "Copy File with NodeJS"
+name: "Copy File with NodeJS Copy"
 description: "Copies a file using nodejs"
 labels: copy nodejs cross-platform file
 branding:

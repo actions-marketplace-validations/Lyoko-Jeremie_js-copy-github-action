@@ -2,6 +2,13 @@
 
 This action copies a file with nodeJS
 
+this is direct use the [npm copy package](https://www.npmjs.com/package/copy)
+
+detail use case can read from code:
+* https://github.com/jonschlinkert/copy
+* https://github.com/jonschlinkert/copy/blob/master/test/copy.js
+* https://github.com/Lyoko-Jeremie/js-copy-github-action/blob/master/index.js
+
 ## Inputs
 
 ### `source`
@@ -13,11 +20,20 @@ This action copies a file with nodeJS
 **Required** The target file
 
 
-## Example usage
+## Simple Example usage
 
 ```yaml
-uses: chpoit/js-copy-github-action@master
-with:
-  source: some-file
-  target: some-place
+    uses: Lyoko-Jeremie/js-copy-github-action@master
+    with:
+      source: some-file
+      target: some-place
+```
+
+```yaml
+    uses: Lyoko-Jeremie/js-copy-github-action@master
+    with:
+      srcBase: /aaaaa/bbbbbb/
+      source: /aaaaa/bbbbbb/FullConfig.json
+      destBase: /aaaaa/cccccc/
+      target: /aaaaa/cccccc/
 ```
